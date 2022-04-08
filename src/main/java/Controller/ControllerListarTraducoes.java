@@ -2,8 +2,10 @@ package Controller;
 
 import Model.App;
 
-public class ControllerListarTraducoes
-{
+
+import java.util.List;
+
+public class ControllerListarTraducoes {
 
     private App app;
 
@@ -16,4 +18,8 @@ public class ControllerListarTraducoes
     {
         return null;
     }
+
+//    public List<String> listarTraducoes() {
+//        return this.app.getListTranslations;
+//    }
 }

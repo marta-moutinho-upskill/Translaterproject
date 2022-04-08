@@ -100,4 +100,11 @@ public class TesteDBConnectionHandler
 
  }
 
+    public static void inserirLinguagem(String novaLinguagem) throws SQLException {
+     {
+      ResultSet res = null;
+      System.out.println("A inserir nova linguagem...");
+      res = dbConnHandler.inserirLinguagem(novaLinguagem);
+     }
+    }
 }

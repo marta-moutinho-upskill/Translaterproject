@@ -28,6 +28,10 @@ public class App
   TesteDBConnectionHandler.getCountPTWords();
  }
 
+ public void inserirLinguagem(String novaLinguagem) throws SQLException {
+  TesteDBConnectionHandler.inserirLinguagem(novaLinguagem);
+ }
+
  public void test() throws SQLException
  {
   TesteDBConnectionHandler.test();
