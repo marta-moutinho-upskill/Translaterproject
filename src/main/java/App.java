@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class App {
  private static App instance = null;
