@@ -119,10 +119,10 @@ public class DBConnectionHandler {
         return stmt.executeQuery("select * from Titulo");
     }
 
-    public ResultSet inserirTraducao(String traducao) throws SQLException {
+    public ResultSet inserirTraducao(String traducao, String listagem, String palavra) throws SQLException {
         stmt = connection.createStatement();
 
-        return stmt.executeQuery("insert * from TanslateData");
+        return stmt.executeQuery("insert into TranslaterData(languageId, Titulo, traducao) values ('"+ listagem+ "', '"+ palavra+ "', '"+ traducao+ "')");
     }
     public ResultSet inserirLinguagem(String novaLinguagem) throws SQLException{
         stmt = connection.createStatement();

@@ -11,8 +11,8 @@ public class ControllerInserirTraducao {
         this.app = App.getInstance();
     }
 
-    public void inserirTraducao(String traducao) throws SQLException {
-        app.inserirTraducao(traducao);
+    public void inserirTraducao(String traducao, String listagem, String palavra) throws SQLException {
+        app.inserirTraducao(traducao, listagem, palavra);
     }
 
     public void listaLinguagens() throws SQLException {

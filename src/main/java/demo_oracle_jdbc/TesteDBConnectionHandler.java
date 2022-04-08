@@ -87,10 +87,10 @@ public class TesteDBConnectionHandler {
         }
     }
 
- public static void inserirTraducao(String traducao) throws SQLException {
+ public static void inserirTraducao(String traducao, String listagem, String palavra) throws SQLException {
   ResultSet res = null;
   System.out.println("Inserir Tradução");
-  res = dbConnHandler.inserirTraducao(traducao);
+  res = dbConnHandler.inserirTraducao(traducao, listagem, palavra);
 
  }
     public static void inserirLinguagem(String novaLinguagem) throws SQLException {

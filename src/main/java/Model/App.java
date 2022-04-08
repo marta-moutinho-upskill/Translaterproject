@@ -38,7 +38,7 @@ public class App {
   TesteDBConnectionHandler.test();
  }
 
- public void inserirTraducao(String traducao) throws SQLException {
-  TesteDBConnectionHandler.inserirTraducao(traducao);
+ public void inserirTraducao(String traducao, String listagem, String palavra) throws SQLException {
+  TesteDBConnectionHandler.inserirTraducao(traducao, listagem, palavra);
  }
 }
