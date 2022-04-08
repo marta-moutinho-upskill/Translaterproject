@@ -14,12 +14,11 @@ public class ControllerListarTraducoes {
         this.app = App.getInstance();
     }
 
-    public String listarTraducoes()
-    {
-        return null;
-    }
+    public String listarTraducoes() {
+            return null;
+        }
 
 //    public List<String> listarTraducoes() {
 //        return this.app.getListTranslations;
 //    }
-}
+    }

@@ -1,12 +1,12 @@
+
 package Model;
+
 
 import demo_oracle_jdbc.TesteDBConnectionHandler;
 
 import java.sql.SQLException;
-import java.util.List;
 
-public class App
-{
+public class App {
  private static App instance = null;
 
  private App()
@@ -23,6 +23,8 @@ public class App
   return instance;
  }
 
+<<<<<<< HEAD
+=======
  public void getCountPTWords() throws SQLException
  {
   TesteDBConnectionHandler.getCountPTWords();
@@ -32,8 +34,13 @@ public class App
   TesteDBConnectionHandler.inserirLinguagem(novaLinguagem);
  }
 
+>>>>>>> 4c7d9904143169b81634ef31b13b6df92d91ca93
  public void test() throws SQLException
  {
   TesteDBConnectionHandler.test();
+ }
+
+ public void inserirTraducao(String traducao) throws SQLException {
+  TesteDBConnectionHandler.inserirTraducao(traducao);
  }
 }
