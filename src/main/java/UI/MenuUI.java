@@ -20,8 +20,8 @@ public class MenuUI {
                 }
 
                 case 2: {
-                    //InserirTraducaoUi ui = new InserirTraducaoUi();
-                    //ui.run();
+                    InserirTraducaoUi ui = new InserirTraducaoUi();
+                    ui.run();
                     break;
                 }
 

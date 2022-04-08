@@ -1,6 +1,11 @@
 
 package Model;
 
+
+import demo_oracle_jdbc.TesteDBConnectionHandler;
+
+import java.sql.SQLException;
+
 public class App {
  private static App instance = null;
 
@@ -18,6 +23,12 @@ public class App {
   return instance;
  }
 
+ public void test() throws SQLException
+ {
+  TesteDBConnectionHandler.test();
+ }
 
-
+ public void inserirTraducao(String traducao) throws SQLException {
+  TesteDBConnectionHandler.inserirTraducao(traducao);
+ }
 }

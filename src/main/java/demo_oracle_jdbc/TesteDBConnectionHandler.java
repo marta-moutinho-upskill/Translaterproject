@@ -100,4 +100,10 @@ public class TesteDBConnectionHandler
 
  }
 
+ public static void inserirTraducao(String traducao) throws SQLException {
+  ResultSet res = null;
+  System.out.println("Inserir Tradução");
+  res = dbConnHandler.inserirTraducao(traducao);
+
+ }
 }
