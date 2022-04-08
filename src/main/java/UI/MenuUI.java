@@ -13,25 +13,25 @@ public class MenuUI {
 
             switch (opcao){
                 case 1: {
-                    InserirLinguagemUi ui= new InserirLinguagemUi(app);
+                    InserirLinguagemUi ui= new InserirLinguagemUi();
                     ui.run();
                     break;
                 }
 
                 case 2: {
-                    InserirTraducaoUi ui = new InserirTraducaoUi(app);
+                    InserirTraducaoUi ui = new InserirTraducaoUi();
                     ui.run();
                     break;
                 }
 
                 case 3:{
-                    ConsultarPalavrasPortuguesasUi ui = new ConsultarPalavrasPortuguesasUi(app);
+                    ConsultarPalavrasPortuguesasUi ui = new ConsultarPalavrasPortuguesasUi();
                     ui.run();
                     break;
                 }
 
                 case 4:{
-                    ListarTraducoesUi ui = new ListarTraducoesUi(app);
+                    ListarTraducoesUi ui = new ListarTraducoesUi();
                     ui.run();
                     break;
                 }
