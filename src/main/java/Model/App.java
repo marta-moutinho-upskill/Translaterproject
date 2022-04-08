@@ -23,10 +23,10 @@ public class App
   return instance;
  }
 
- //public List<String> getCountPTWords() throws SQLException
- //{
-  //TesteDBConnectionHandler.getCountPTWords();
- //}
+ public void getCountPTWords() throws SQLException
+ {
+  TesteDBConnectionHandler.getCountPTWords();
+ }
 
  public void test() throws SQLException
  {

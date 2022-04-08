@@ -15,10 +15,10 @@ public class ControllerConsultarPalavrasPT
   this.app = App.getInstance();
  }
 
- //public List<String> getCountPTWords() throws SQLException
- //{
-  //return this.app.getCountPTWords();
- //}
+ public void getCountPTWords() throws SQLException
+ {
+  this.app.getCountPTWords();
+ }
 
  public void test() throws SQLException
  {

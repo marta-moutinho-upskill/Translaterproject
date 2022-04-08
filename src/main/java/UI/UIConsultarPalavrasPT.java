@@ -18,7 +18,7 @@ public class UIConsultarPalavrasPT
  {
   System.out.println("Consultar Palavras Portuguesas");
   System.out.println("Número de traducões para cada palavra portuguesa");
-  //controller.getCountPTWords();
-  controller.test();
+  controller.getCountPTWords();
+  //controller.test();
  }
 }
