@@ -16,7 +16,7 @@ public class UIListarTraducoesUi {
 
     public void run(){
         System.out.println("Traduções já existentes: ");
-        System.out.println(controller.listarTraducoes());
+//        System.out.println(controller.listarTraducoes());
     }
 
 }

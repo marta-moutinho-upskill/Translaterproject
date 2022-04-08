@@ -14,8 +14,8 @@ public class UIMenu {
 
             switch (opcao){
                 case 1: {
-                    //InserirLinguagemUi ui= new InserirLinguagemUi();
-                    //ui.run();
+                    UIInserirLinguagem ui= new UIInserirLinguagem();
+                    ui.run();
                     break;
                 }
 

@@ -121,8 +121,10 @@ public class DBConnectionHandler {
         return stmt.executeQuery("select * from Titulo");
     }
 
-    public ResultSet inserirLinguagem() throws SQLException{
-        
+    public ResultSet inserirLinguagem(String novaLinguagem) throws SQLException{
+        stmt = connection.createStatement();
+
+        return stmt.executeQuery("alter table Languages add " + novaLinguagem+ " varchar(20)");
     }
 
 }

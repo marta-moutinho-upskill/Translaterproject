@@ -2,6 +2,7 @@ package UI;
 
 import Controller.ControllerInserirLinguagem;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 
@@ -15,7 +16,7 @@ public class UIInserirLinguagem {
         controller= new ControllerInserirLinguagem();
     }
 
-    public void run(){
+    public void run() throws SQLException {
         System.out.println("Qual a nova linguagem que quer inserir?");
         String novaLinguagem = ler.nextLine();
         controller.inserirLinguagem(novaLinguagem);

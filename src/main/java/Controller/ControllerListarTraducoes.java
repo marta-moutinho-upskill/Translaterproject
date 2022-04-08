@@ -12,7 +12,7 @@ public class ControllerListarTraducoes {
         this.app = App.getInstance();
     }
 
-    public List<String> listarTraducoes() {
-        return this.app.getListTranslations;
-    }
+//    public List<String> listarTraducoes() {
+//        return this.app.getListTranslations;
+//    }
 }

@@ -104,11 +104,7 @@ public class TesteDBConnectionHandler
      {
       ResultSet res = null;
       System.out.println("A inserir nova linguagem...");
-      res = dbConnHandler.inserirLinguagem();
-      while (res.next())
-      {
-       System.out.println(res.getInt(1));
-      }
+      res = dbConnHandler.inserirLinguagem(novaLinguagem);
      }
     }
 }
