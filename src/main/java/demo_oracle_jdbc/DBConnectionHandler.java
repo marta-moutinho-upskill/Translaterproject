@@ -127,7 +127,7 @@ public class DBConnectionHandler {
     public ResultSet inserirLinguagem(String novaLinguagem) throws SQLException{
         stmt = connection.createStatement();
 
-        return stmt.executeQuery("insert into Languages(language) values ('"+ novaLinguagem+ "');");
+        return stmt.executeQuery("insert into Languages(language) values ('"+ novaLinguagem+ "')");
     }
 
 }
