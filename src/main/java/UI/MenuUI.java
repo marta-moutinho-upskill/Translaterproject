@@ -1,10 +1,12 @@
 package UI;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class MenuUI {
 
-    public void run() {
+    public void run() throws SQLException
+    {
         int opcao = -1;
 
         do{
@@ -12,19 +14,20 @@ public class MenuUI {
 
             switch (opcao){
                 case 1: {
-                    InserirLinguagemUi ui= new InserirLinguagemUi();
-                    ui.run();
+                    //InserirLinguagemUi ui= new InserirLinguagemUi();
+                    //ui.run();
                     break;
                 }
 
                 case 2: {
-                    InserirTraducaoUi ui = new InserirTraducaoUi();
-                    ui.run();
+                    //InserirTraducaoUi ui = new InserirTraducaoUi();
+                    //ui.run();
                     break;
                 }
 
                 case 3:{
-                    UIConsultarPalavrasPortuguesas ui = new UIConsultarPalavrasPortuguesas();
+
+                    UIConsultarPalavrasPT ui = new UIConsultarPalavrasPT();
                     ui.run();
                     break;
                 }
@@ -32,9 +35,8 @@ public class MenuUI {
                 case 4:{
 
                     ListarTraducoesUi ui = new ListarTraducoesUi();
-
-                    listarTraducoes ui = new ListarTraducoesUi(app);
                     ui.run();
+
                     break;
                 }
                 default:
