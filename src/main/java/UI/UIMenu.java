@@ -3,7 +3,7 @@ package UI;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class MenuUI {
+public class UIMenu {
 
     public void run() throws SQLException
     {
@@ -14,8 +14,8 @@ public class MenuUI {
 
             switch (opcao){
                 case 1: {
-                    //InserirLinguagemUi ui= new InserirLinguagemUi();
-                    //ui.run();
+                    UIInserirLinguagem ui= new UIInserirLinguagem();
+                    ui.run();
                     break;
                 }
 
@@ -34,9 +34,15 @@ public class MenuUI {
 
                 case 4:{
 
-                    ListarTraducoesUi ui = new ListarTraducoesUi();
+                    UIListarTraducoesUi ui = new UIListarTraducoesUi();
                     ui.run();
 
+                    break;
+                }
+                case 5:{
+
+                    UIListarLinguagens ui = new UIListarLinguagens();
+                    ui.run();
                     break;
                 }
                 default:
@@ -48,11 +54,13 @@ public class MenuUI {
 
 
     private int apresentarMenu(){
-        System.out.println("4. Listar todas as traduções");
-        System.out.println("3. Consultar palavras portuguesas");
-        System.out.println("2. Inserir tradução");
-        System.out.println("1. Inserir nova linguagem");
+
         System.out.println("0. Terminar");
+        System.out.println("1. Inserir nova linguagem");
+        System.out.println("2. Inserir tradução");
+        System.out.println("3. Consultar palavras portuguesas");
+        System.out.println("4. Listar todas as traduções");
+        System.out.println("5. Listar Todas as Linguagens");
         System.out.println("Escolha uma opção:");
         Scanner ler= new Scanner(System.in);
         return ler.nextInt();

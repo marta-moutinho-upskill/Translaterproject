@@ -1,24 +1,24 @@
 package UI;
 
 import Controller.ControllerConsultarPalavrasPT;
+import Controller.ControllerListarLinguagens;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class UIConsultarPalavrasPT
+public class UIListarLinguagens
 {
- private ControllerConsultarPalavrasPT controller;
+ private ControllerListarLinguagens controller;
 
- public UIConsultarPalavrasPT()
+ public UIListarLinguagens()
  {
-  this.controller = new ControllerConsultarPalavrasPT();
+  this.controller = new ControllerListarLinguagens();
  }
 
  public void run() throws SQLException
  {
   System.out.println("Consultar Palavras Portuguesas");
   System.out.println("Número de traducões para cada palavra portuguesa");
-  controller.getCountPTWords();
-  //controller.test();
+  controller.test();
  }
 }

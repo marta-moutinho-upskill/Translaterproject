@@ -2,16 +2,23 @@ package Controller;
 
 import Model.App;
 
-public class ControllerListarTraducoes {
 
+import java.util.List;
+
+public class ControllerListarTraducoes {
 
     private App app;
 
-    public ControllerListarTraducoes(){
+    public ControllerListarTraducoes()
+    {
         this.app = App.getInstance();
     }
 
     public String listarTraducoes() {
-        return null;
+            return null;
+        }
+
+//    public List<String> listarTraducoes() {
+//        return this.app.getListTranslations;
+//    }
     }
-}
