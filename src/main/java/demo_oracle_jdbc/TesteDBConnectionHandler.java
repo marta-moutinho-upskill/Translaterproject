@@ -91,7 +91,7 @@ public class TesteDBConnectionHandler
  public static void test() throws SQLException
  {
   ResultSet res = null;
-  System.out.println("Loading Atleta info...Column 1");
+  System.out.println("Linguagens existentes:");
   res = dbConnHandler.test();
   while (res.next())
   {
