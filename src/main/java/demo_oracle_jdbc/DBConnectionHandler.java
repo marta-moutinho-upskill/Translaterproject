@@ -112,7 +112,6 @@ public class DBConnectionHandler {
     }
 
 
-    //incluir métodos para executar query
     public ResultSet listarTraducoes() throws SQLException{
         prepStmt = connection.prepareStatement("select * from Titulo");
         stmt = connection.createStatement();
