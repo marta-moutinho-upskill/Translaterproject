@@ -2,21 +2,22 @@ package UI;
 
 import Controller.ControllerListarTraducoes;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
-public class UIListarTraducoesUi {
+public class UIListarTraducoes {
     Scanner ler = new Scanner(System.in);
 
     private ControllerListarTraducoes controller;
 
 
-    public UIListarTraducoesUi(){
+    public UIListarTraducoes(){
         controller= new ControllerListarTraducoes();
     }
 
-    public void run(){
+    public void run() throws SQLException {
         System.out.println("Traduções já existentes: ");
-//        System.out.println(controller.listarTraducoes());
+    controller.listarTraducoes();
     }
 
 }

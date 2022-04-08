@@ -113,7 +113,7 @@ public class DBConnectionHandler {
 
 
     public ResultSet listarTraducoes() throws SQLException{
-        prepStmt = connection.prepareStatement("select * from Titulo");
+
         stmt = connection.createStatement();
 
         return stmt.executeQuery("select * from Titulo");
