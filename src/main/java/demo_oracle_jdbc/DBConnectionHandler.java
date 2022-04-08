@@ -112,14 +112,6 @@ public class DBConnectionHandler {
         return stmt.executeQuery("select * from Languages");
     }
 
-    //sdds
-    public ResultSet getInfoAtleta(int x) throws SQLException {
-        prepStmt = connection.prepareStatement("select * from Atleta where idAtleta = ? order by 1 desc");
-
-        prepStmt.setInt(1, x);
-
-        return prepStmt.executeQuery();
-    }
 
     //incluir métodos para executar query
     public ResultSet listarTraducoes() throws SQLException{
@@ -127,6 +119,10 @@ public class DBConnectionHandler {
         stmt = connection.createStatement();
 
         return stmt.executeQuery("select * from Titulo");
+    }
+
+    public ResultSet inserirLinguagem() throws SQLException{
+        
     }
 
 }

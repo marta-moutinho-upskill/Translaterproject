@@ -10,7 +10,7 @@ public class ControllerInserirLinguagem {
         this.app= App.getInstance();
     }
 
-    public void inserirLinguagem(){
-        app.inserirLinguagem;
+    public void inserirLinguagem(String novaLinguagem){
+        app.inserirLinguagem(novaLinguagem);
     }
 }

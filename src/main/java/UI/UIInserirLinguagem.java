@@ -1,5 +1,7 @@
 package UI;
 
+import Controller.ControllerInserirLinguagem;
+
 import java.util.Scanner;
 
 
@@ -7,10 +9,10 @@ public class UIInserirLinguagem {
     Scanner ler = new Scanner(System.in);
 
 
-    private InserirLinguagemController controller;
+    private ControllerInserirLinguagem controller;
 
     public UIInserirLinguagem(){
-        controller= new InserirLinguagemController();
+        controller= new ControllerInserirLinguagem();
     }
 
     public void run(){
