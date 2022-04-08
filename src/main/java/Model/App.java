@@ -1,6 +1,12 @@
 package Model;
 
-public class App {
+import demo_oracle_jdbc.TesteDBConnectionHandler;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class App
+{
  private static App instance = null;
 
  private App()
@@ -17,5 +23,13 @@ public class App {
   return instance;
  }
 
+ //public List<String> getCountPTWords() throws SQLException
+ //{
+  //TesteDBConnectionHandler.getCountPTWords();
+ //}
 
+ public void test() throws SQLException
+ {
+  TesteDBConnectionHandler.test();
+ }
 }
