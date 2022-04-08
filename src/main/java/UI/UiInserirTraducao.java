@@ -5,11 +5,11 @@ import Controller.ControllerInserirTraducao;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class InserirTraducaoUi
+public class UiInserirTraducao
 {
  private ControllerInserirTraducao controller;
 
- public InserirTraducaoUi()
+ public UiInserirTraducao()
  {
   this.controller = new ControllerInserirTraducao();
  }
@@ -19,6 +19,7 @@ public class InserirTraducaoUi
   Scanner ler = new Scanner(System.in);
   System.out.println("Escolha a linguagem: ");
   controller.listaLinguagens();
+  String linguagem = ler.nextLine();
   //string - exatamaente a plavra  ES
 
   System.out.println("Escerva a pala");
@@ -28,7 +29,7 @@ public class InserirTraducaoUi
   System.out.println("Escerva a pala");
   String traducao = ler.nextLine(); //a traducao na linguagem qu ecoloher
 
-  controller.inserirTraducao(traducao);
+  controller.inserirTraducao(linguagem, palavra, traducao);
 
 
  }

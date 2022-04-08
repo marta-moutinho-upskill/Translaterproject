@@ -20,7 +20,7 @@ public class UIMenu {
                 }
 
                 case 2: {
-                    InserirTraducaoUi ui = new InserirTraducaoUi();
+                    UiInserirTraducao ui = new UiInserirTraducao();
                     ui.run();
                     break;
                 }
