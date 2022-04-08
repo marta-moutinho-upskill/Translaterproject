@@ -1,7 +1,10 @@
 package UI;
 
+import Model.App;
+
 import java.util.Scanner;
 
+/**
 public class InserirLinguagemUi {
     Scanner ler = new Scanner(System.in);
 
@@ -10,7 +13,7 @@ public class InserirLinguagemUi {
 
 
     public InserirLinguagemUi(App minhaApp){
-        this.minhaApp=minhaApp;
+        this.minhaApp= App.getInstance();
         controller= new InserirLinguagemController(minhaApp);
     }
 
@@ -21,3 +24,4 @@ public class InserirLinguagemUi {
         System.out.println("Linguagem inserida com sucesso.");
     }
 }
+*/

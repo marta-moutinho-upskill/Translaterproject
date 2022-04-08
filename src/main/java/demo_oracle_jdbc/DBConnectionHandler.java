@@ -18,12 +18,16 @@ public class DBConnectionHandler {
     private Statement stmt;
     private ResultSet rSet;
 
-    public DBConnectionHandler(String jdbcUrl, String username, String password) {
+    public DBConnectionHandler(String jdbcUrl, String username, String password) throws SQLException
+    {
         this.jdbcUrl = jdbcUrl;
         this.username = username;
         this.password = password;
 
-        connection = null;
+        OracleDataSource ds = new OracleDataSource();
+        ds.setURL(jdbcUrl);
+        connection = ds.getConnection(username, password);
+
         prepStmt = null;
         rSet = null;
         stmt = null;
@@ -88,6 +92,27 @@ public class DBConnectionHandler {
         return stmt.executeQuery("select * from Atleta\norder by 1"); //"select * from Atleta order by 1"
     }
 
+    public ResultSet getCountPTWords() throws SQLException{
+        //prepStmt = connection.prepareStatement("select * from Atleta where idAtleta = ?");
+        stmt = connection.createStatement();
+
+        return stmt.executeQuery("select t.languageid, t.titulo,\n" +
+                "(\n" +
+                "select count(distinct l.language)\n" +
+                "from Languages l\n" +
+                "where l.language = t.languageid\n" +
+                ") \"nrTraduções\"\n" +
+                "from TranslaterData t");
+    }
+
+    public ResultSet test() throws SQLException{
+        //prepStmt = connection.prepareStatement("select * from Atleta where idAtleta = ?");
+        stmt = connection.createStatement();
+
+        return stmt.executeQuery("select * from Languages");
+    }
+
+    //sdds
     public ResultSet getInfoAtleta(int x) throws SQLException {
         prepStmt = connection.prepareStatement("select * from Atleta where idAtleta = ? order by 1 desc");
 
