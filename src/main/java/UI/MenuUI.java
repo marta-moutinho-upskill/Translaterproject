@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class MenuUI {
 
-
     public void run() {
         int opcao = -1;
 
@@ -25,13 +24,24 @@ public class MenuUI {
                 }
 
                 case 3:{
+<<<<<<< HEAD
                     ConsultarPalavrasPortuguesasUi ui = new ConsultarPalavrasPortuguesasUi();
+=======
+                    UIConsultarPalavrasPortuguesas ui = new UIConsultarPalavrasPortuguesas();
+>>>>>>> a7567760d6294cd6be82e4efe91e60b8b8ec8581
                     ui.run();
                     break;
                 }
 
                 case 4:{
+<<<<<<< HEAD
                     ListarTraducoesUi ui = new ListarTraducoesUi();
+=======
+
+                    ListarTraducoesUi ui = new ListarTraducoesUi();
+
+                    listarTraducoes ui = new ListarTraducoesUi(app);
+>>>>>>> a7567760d6294cd6be82e4efe91e60b8b8ec8581
                     ui.run();
                     break;
                 }
