@@ -26,6 +26,7 @@ public class MenuUI {
                 }
 
                 case 3:{
+
                     UIConsultarPalavrasPT ui = new UIConsultarPalavrasPT();
                     ui.run();
                     break;
@@ -34,9 +35,8 @@ public class MenuUI {
                 case 4:{
 
                     ListarTraducoesUi ui = new ListarTraducoesUi();
+                    ui.run();
 
-                    //listarTraducoes ui = new ListarTraducoesUi(app);
-                    //ui.run();
                     break;
                 }
                 default:
