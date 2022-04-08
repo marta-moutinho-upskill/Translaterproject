@@ -30,7 +30,10 @@ public class MenuUI {
                 }
 
                 case 4:{
+
                     ListarTraducoesUi ui = new ListarTraducoesUi();
+
+                    listarTraducoes ui = new ListarTraducoesUi(app);
                     ui.run();
                     break;
                 }
