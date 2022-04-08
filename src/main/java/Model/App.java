@@ -23,7 +23,10 @@ public class App {
   return instance;
  }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0d58bb517a8b0a4fecf2d95345cacb1e9d8b1c65
  public void getCountPTWords() throws SQLException
  {
   TesteDBConnectionHandler.getCountPTWords();
@@ -33,7 +36,10 @@ public class App {
   TesteDBConnectionHandler.inserirLinguagem(novaLinguagem);
  }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0d58bb517a8b0a4fecf2d95345cacb1e9d8b1c65
  public void test() throws SQLException
  {
   TesteDBConnectionHandler.test();
