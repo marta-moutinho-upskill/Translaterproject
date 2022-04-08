@@ -54,5 +54,9 @@ public class TestDBConnectionHandler
   }
 
  }
+
+ private void openConnection()
+ {
  }
 }
+
