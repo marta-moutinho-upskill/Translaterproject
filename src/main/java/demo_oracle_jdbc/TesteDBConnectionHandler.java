@@ -6,25 +6,25 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class TesteDBConnectionHandler {
-
+    DBConnectionHandler dbConnHandler = null;
 
     public static void main(String[] args) {
 
-        DBConnectionHandler dbConnHandler = null;
+        TesteDBConnectionHandler tb = new TesteDBConnectionHandler();
 
         try {
             String jdbcUrl = "jdbc:oracle:thin:@vsrvbd1.dei.isep.ipp.pt:1521/pdborcl";
 
             String username = "UPSKILL_BD_TURMA2_07";
             String password = "qwerty";
-
-            dbConnHandler = new DBConnectionHandler(jdbcUrl, username, password);
-
+            
+            tb.dbConnHandler = new DBConnectionHandler(jdbcUrl, username, password);
+            
             System.out.println("\nEstabelecer a ligação à BD...");
-            dbConnHandler.openConnection();
-
+            tb.dbConnHandler.openConnection();
+           
             System.out.println("\t... Ligação obtida.");
-
+            
             //invocação dos métodos da classe responsável pela ligação
             /*
             ResultSet res = null;
@@ -48,16 +48,17 @@ public class TesteDBConnectionHandler {
                 System.out.println(res.getDate("dataNascimento"));
 
             }*/
-
+            
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } finally {
-            String mensagem = dbConnHandler.closeAll();
+            String mensagem = tb.dbConnHandler.closeAll();
             if (!mensagem.isEmpty())
                 System.out.println(mensagem);
             System.out.println("\nTerminada a ligação à BD.");
-            dbConnHandler.closeAll();
+            tb.dbConnHandler.closeAll();
         }
-
+        
     }
+
 }
