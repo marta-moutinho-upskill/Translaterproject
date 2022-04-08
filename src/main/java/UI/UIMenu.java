@@ -3,7 +3,7 @@ package UI;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class MenuUI {
+public class UIMenu {
 
     public void run() throws SQLException
     {
