@@ -1,4 +1,6 @@
 
+package Model;
+
 public class App {
  private static App instance = null;
 
@@ -15,6 +17,7 @@ public class App {
   }
   return instance;
  }
+
 
 
 }
