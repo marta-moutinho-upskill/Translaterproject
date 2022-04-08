@@ -54,5 +54,17 @@ public class TestDBConnectionHandler
   }
 
  }
+
+ private ResultSet getInfoAtleta(int i) {
  }
+
+ private ResultSet getAllAtleta() {
+ }
+
+ private String closeAll() {
+ }
+
+ private void openConnection() {
+ }
+}
 }
