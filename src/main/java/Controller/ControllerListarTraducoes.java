@@ -9,4 +9,8 @@ public class ControllerListarTraducoes {
     public ControllerListarTraducoes(){
         this.app = App.getInstance();
     }
+
+    public String listarTraducoes(){
+        return null;
+    }
 }
