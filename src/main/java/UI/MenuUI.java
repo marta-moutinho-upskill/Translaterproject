@@ -34,7 +34,7 @@ public class MenuUI {
 
                 case 4:{
 
-                    ListarTraducoesUi ui = new ListarTraducoesUi();
+                    UIListarTraducoesUi ui = new UIListarTraducoesUi();
                     ui.run();
 
                     break;

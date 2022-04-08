@@ -1,17 +1,16 @@
 package UI;
 
 import Controller.ControllerListarTraducoes;
-import demo_oracle_jdbc.DBConnectionHandler;
 
 import java.util.Scanner;
 
-public class ListarTraducoesUi {
+public class UIListarTraducoesUi {
     Scanner ler = new Scanner(System.in);
 
     private ControllerListarTraducoes controller;
 
 
-    public ListarTraducoesUi(){
+    public UIListarTraducoesUi(){
         controller= new ControllerListarTraducoes();
     }
 
