@@ -71,7 +71,7 @@ public class TesteDBConnectionHandler {
 
     public static void getCountPTWords() throws SQLException {
         ResultSet res = null;
-        System.out.println("Loading Atleta info...Column 1");
+        System.out.println("Nr. de palavras portuguesas:");
         res = dbConnHandler.getCountPTWords();
         while (res.next()) {
             System.out.println(res.getInt(1));
