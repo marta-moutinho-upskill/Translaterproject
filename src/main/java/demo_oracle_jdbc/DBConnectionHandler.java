@@ -106,7 +106,6 @@ public class DBConnectionHandler {
     }
 
     public ResultSet test() throws SQLException{
-        //prepStmt = connection.prepareStatement("select * from Atleta where idAtleta = ?");
         stmt = connection.createStatement();
 
         return stmt.executeQuery("select * from Languages");
